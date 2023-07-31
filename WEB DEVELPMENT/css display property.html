@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAY PROPERTY</title>
+    <style>
+        *{
+          box-sizing: border-box;  
+        }
+        header{
+            margin: auto;
+            border:3px solid black;
+            background-color: grey;
+            border-radius: 3px;
+            width: 1200px;
+        }
+        header:hover{
+            background-color: rgb(193, 188, 188);
+        }
+        img{
+            display: block;
+            margin: auto;
+            width: 3%;
+        }
+        /* now here we knpw that oimg is a inline elemet so if we want it be centered it can be done by channging it into the block element by using the display property and then keepin the margin of the img tag as block and then the margin will be set to auto which actually takes the element to the center   */
+        h2{
+            /* display: block; */
+            margin: 0px;
+            text-align: center;
+        }
+        
+        /* now here in the h3 i wanted the same as of the img tag so here i dome this by alingning the text to the center and i gues */
+        .box {
+            border: 4px solid black;
+            background-color: grey;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+            border-radius: 3px;
+        }
+        /* now here in the box tag above what i have done is that if we want the elemnt to be inline and block at the same time for the better view or designing whatever we can say we wil do it by by that method  */
+        .container{
+            margin: auto;
+            width: 1200px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://www.codewithharry.com/img/logo-blue.png" alt="codewithharry">
+        <h2>
+            HEADER !!   
+        </h2>
+    </header>
+        <div class="container">
+            <div class="box">
+                <h4 class="heading">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cumque debitis recusandae, repellat accusamus assumenda nemo inventore quo rerum adipisci molestias consectetur iusto velit labore ullam quos unde nostrum quidem voluptate. Optio quod harum deleniti ullam suscipit laboriosam maiores? Deserunt veritatis iusto eligendi doloribus.</p>
+                </h4>
+            </div>
+            <div class="box">
+                <h4 class="heading">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cumque debitis recusandae, repellat accusamus assumenda nemo inventore quo rerum adipisci molestias consectetur iusto velit labore ullam quos unde nostrum quidem voluptate. Optio quod harum deleniti ullam suscipit laboriosam maiores? Deserunt veritatis iusto eligendi doloribus.</p>
+                </h4>
+            </div>
+            <div class="box">
+                <h4 class="heading">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel cumque debitis recusandae, repellat accusamus assumenda nemo inventore quo rerum adipisci molestias consectetur iusto velit labore ullam quos unde nostrum quidem voluptate. Optio quod harum deleniti ullam suscipit laboriosam maiores? Deserunt veritatis iusto eligendi doloribus.</p>
+                </h4>
+            </div>
+        </div>
+</body>
+</html>

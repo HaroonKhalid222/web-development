@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL MARGIN AND PADDING IN CSS</title>
+    <style>
+        /* now there comes a universal selector which make sure for all the elements that their box sizing padding or anything we want universal in our work  */
+
+    
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(237, 206, 249);
+        }
+        .container{
+            background-color: rgb(192, 163, 219);
+            border: 3px solid purple;
+            /* now here i want to make my content look better like if i want the content to go in the center of the box just to look better i will use padding  */
+             /* element-padding-border-margin =box model  */
+
+             /* padding: 59px;  */
+             
+             /* now here i have given the padding for all the sides top bottom right left and all  */
+
+             /* we can also give them seprately as  */
+
+            /* padding-top: 33px;
+            padding-right: 100px;
+            padding-left: 40px;
+            padding-bottom: 37px; */
+
+            /* /* now there is anothe way to give padding and a formula is there whic defines it
+            padding:T R B L 
+            means that padding:top right bottom left;
+            */
+
+            /* padding: 100px 110px 78px 67px;  */
+            /*this is also a way to write the padding*/
+
+            /* there also exists another way of writing the padding as 
+            padding:y(top/bottom) x(right/left);
+            */
+
+            padding: 36px 18px;
+            /* similarly we can add margin like we have added the padding with the exactly same way as  */
+            
+            /* margin: 50px; margin actually creates a gap between the borders */
+
+            /* similarly we can write the margin as  */
+            /* margin-top: 30px;
+            margin-bottom: 33px;
+            same as for left and right  */
+
+            /* also can be written as  */
+            margin: 20px 40px;
+
+            border-radius: 12px;
+            width: 450px;
+            /* box-sizing: border-box;  */
+            /* as we have used that in the universal selector  */
+
+           
+
+
+        }
+        #header{
+            color: aliceblue;
+            background-color: rgb(90, 13, 157);
+            border: 6px solid rgb(58, 5, 64);
+            width: 570px;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 9px;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="header">BOX MODEL, MARGIN AND PADDING IN CSS</h2>
+
+    
+        <div class="container">
+            <h3>This is my first heading</h3>
+        <p>This is the paragraph of my first heading Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sit sunt voluptas doloremque distinctio nostrum placeat! Dicta, corrupti. </p>
+        </div>
+
+        <div class="container">
+            <h3>This is my first heading</h3>
+            <p>This is the paragraph of my first heading Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime aut alias sapiente reprehenderit dolor tempore modi quos assumenda. </p>
+        </div>
+
+        <div class="container">
+            <h3>This is my first heading</h3>
+            <p>This is the paragraph of my first heading Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo nihil voluptas a, accusamus harum accusantium labore asperiores aliquid! </p>
+        
+        </div>
+    
+</body>
+</html>

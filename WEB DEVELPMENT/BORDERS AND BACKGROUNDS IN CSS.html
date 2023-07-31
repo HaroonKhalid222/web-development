@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BORDERS AND BACKGROUNDS</title>
+    <style>
+        #firstPara{
+            background-color: rgb(16, 228, 179);
+            height: 100px;
+            width: 400px;
+            /* border-width: 3px;
+            border-color: rgb(133, 15, 162);
+            border-style: solid; */
+            /* now instead of these three statements we can write it as  */
+            border: 3px solid greenyellow;
+            /* now if we want the sides of the borde to ook curved we can do that as  */
+            border-radius: 4px;
+
+        }
+        #secondPara{
+            background-color: aqua;
+            height: 110px;
+            width: 440px;
+            /* border: 3px yellow solid; */
+            /* now if we want to give each side a different color then we will write it's css as  */
+            border-top:3px solid black;
+            border-right: 5px solid green;
+            border-bottom: 4px solid yellow;
+            border-left: 7px solid hotpink;
+            border-top-left-radius: 12px;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 11px;
+
+
+        }
+        #thirdPara{
+            
+            height: 500px;
+            width: 500px;
+            background-image: url(https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80 );
+            background-size: 200px;
+            border: 3px solid orchid;
+            background-repeat: no-repeat;
+                        /* here  we can do alot with the position of the background  */
+            /* for center              */
+
+            /* background-position: center center; */
+
+
+            /* background-position: center left; */
+            /* background-position: center right; */
+
+            /* for top  */
+/*             
+            background-position: top right;
+            background-position: top left;            
+            background-position: top center;
+             */
+             /* for bottom  */
+
+            /* background-position: bottom center;            
+            background-position: bottom left;            
+            background-position: bottom right;             */
+        /* we can also give them a specified pixel value as      */
+        background-position: 100px 100px;
+
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h2>BODERS AND BACKGROUNDS !</h2>
+
+    <h3>THIS IS FIRST HEADING </h3>
+    <p id="firstPara">This is a paragraph</p>
+
+    <h3 >THIS IS FIRST HEADING </h3>
+    <p id="secondPara">This is another paragraph</p>
+
+    <h3>This is third heading </h3>
+    <p id="thirdPara">This is yet another paragraph</p>
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT AND CLEAR</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Ubuntu:wght@300;400&display=swap
+    ">
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        .container{
+            width: 850px;
+            margin:20px auto;
+            border: 3px solid rebeccapurple;
+            background-color: rgb(241, 190, 233);
+            border-radius: 10px;
+            
+
+        }
+        .item{
+            border: 3px solid rgb(233, 122, 203);
+            margin: 15px 7px;
+            padding: 15px 7px;
+            background-color: rgb(241, 224, 238);
+            border-radius: 10px;
+        }
+        body{
+            font-family: 'Mouse Memoirs', sans-serif;
+            background-image: url(https://images.unsplash.com/photo-1491485066275-97da4e681cb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+            background-repeat: no-repeat;
+            background-size: 1550px;
+
+        }
+        /* now here we will see how float works .FLOAT ACTUALLY HELPS US TO FLOAT THE DIVS OR PARAGRAPHS AND ETC TO RIGHT OR LEFT  */
+        #fruit{
+            float: right;
+            width: 48%;
+            /* clear: both; */
+
+        }
+         #cars{
+            float: left;
+            width: 48%;  
+
+        }
+        #motorcycle{
+            /* now here if i remove the floating for this id then the above id.s will overlap it and for the prevention of that overlaping we will use the clear funtion  */
+              /* float: left; */
+            width: 100%;
+            /* clear: left;
+            clear: right; */
+            /* the clear can be used according to the float used above if the floating is on the left side then the clear will be on the left side and if the floating will be on both the sides then the clear will be used on the both sides  */
+            clear: both;
+             
+
+        }
+        /* now here comes the alingment of the text in the paragraphs or anywhere itr can be done as  */
+        p,h3{
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align:justify;
+        }
+        h2{
+            width: 180px;
+            margin: auto;
+        }
+        #fruitpara:hover
+        {
+
+            color: rgb(30, 63, 52);
+
+        }
+        .car:hover{
+            background-color: blanchedalmond;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h2 class="container">FLOAT AND CLEAR</h2>
+
+    <div class="container">
+        <h2>WELCOME TO MY STORE</h2>
+        <div id="fruit" class="item">
+            <h3>FRUIT</h3>
+            <p id="fruitpara" class="para"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quod quibusdam perspiciatis voluptatum quidem incidunt earum distinctio id neque voluptatibus, eveniet ea ad nobis porro aliquid doloremque ullam! Ea a numquam quisquam repellendus facere? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus delectus corporis blanditiis id. Est in quis autem distinctio vero voluptates ipsam architecto ut, eveniet eos, recusandae quidem tempore quas!</p>
+
+        </div>
+        <div id="cars" class="item">
+            <h3 class="car">CARS</h3>
+            <p id="carspara" class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis, quos? Cumque, nostrum possimus labore vero, rerum odit recusandae porro, praesentium inventore ut animi optio dolores! Numquam hic debitis et officiis atque neque eos provident? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem laudantium aliquid molestiae necessitatibus praesentium, amet corrupti odit, modi laboriosam ipsa, distinctio veniam! Ducimus dignissimos nesciunt ex reprehenderit veniam laboriosam eum.
+            </p>
+        </div>
+        <div id="motorcycle" class="item">
+            <h3>MOTORCYCLE</h3>
+            <p id="motorcyclepara" class="para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet perferendis delectus dolorum alias. Dicta omnis tempora repellat natus dolor. Id fugiat consequuntur laboriosam saepe delectus. Voluptatem consequatur aliquid consequuntur. Veniam ducimus similique ex eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium officiis molestias accusamus unde distinctio, veniam quo, quod maxime cum repellendus animi ratione!
+            </p>
+        </div>
+        <div id="bags" class="item">
+            <h3>BAGS</h3>
+            <p id="bagspara" class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque minima quam, eius sunt ducimus possimus enim fugiat quia perferendis, hic, similique beatae delectus ex molestias amet nihil distinctio illo a mollitia magnam. Molestias, voluptates expedita. Obcaecati ullam repudiandae, sed laborum, quibusdam perspiciatis minus, minima animi cumque veritatis amet fugit quo ipsam totam nulla exercitationem ipsum doloribus aspernatur suscipit odit eaque? Consequatur aperiam dicta nesciunt mollitia distinctio? Illum.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

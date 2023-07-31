@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling links and buttons</title>
+    <style>
+        body{
+            background-color: rgb(147, 222, 224);
+        }
+        .container{
+            border: 3px solid brown;
+            background-color: rgb(198, 236, 223);
+            padding: 30px;
+            margin: 30px auto;
+            width: 700px;
+            border-radius: 10px;
+            
+        }
+        .btn{
+            color: cornflowerblue;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            
+            background-color: aqua;
+            
+        }
+        a:hover{
+            background-color: aquamarine;
+        }
+        a:visited{
+            background-color: antiquewhite;
+        }
+        a:active{
+            background-color: burlywood;
+        }
+        .btn:hover{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="container">
+        STYLING LINKS AND BUTTONS!
+    </h2>
+    <div class="container" id="first">
+        <h2>This is my container !</h2>
+        <p class="firstPara">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, iusto in nostrum omnis vel laudantium nobis ea cupiditate exercitationem optio facere ex veniam. Placeat ut excepturi nemo quod vitae. Iste quod dolores recusandae asperiores labore numquam omnis eaque consequatur.
+        </p>
+        <a href="https://yahoo.com" class="btn">Read more</a>
+        <button class="btn">CONTACT US</button>
+    </div>
+</body>
+</html>

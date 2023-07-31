@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        html{
+            font-size: 25px; /*rem*/
+
+        }
+        .container{
+            width: 100vw;
+            /* here the % also workd good  */
+            height: 100vh; 
+            /* this vh is used ofently because this will give yoy the height accordingly */
+            border: 2px solid red;
+            text-align: center;
+            font-size: 10px;
+        }
+        #first{
+            /* font-size: 10em;  */
+            /* 10em means the 10 time size of the parent which is container  */
+            /* now if we want to give the padding in em then it will give the padding according to the fontsize of the item which is three em means if i give 3em padding here then it will be 3 times of the font sizze eich in pixels will be 30*3=90  */
+            /* font-size: 3em;/*-1-*/
+            /* padding: 3em; -1- */ 
+        }
+        #sec{
+            /* here all the vhanges will take place according to the html section beacuas the unit we use here is the child of htlm  */
+            /*now this is changing according to the html font size which is given there so 3 rem means 3*25=75;*/
+            /* font-size: 3rem;
+            padding: 3rem; */
+            
+        }
+
+    </style>
+</head>
+<body>
+    <!-- SETTING UP VIEWREPORT -->
+    <!-- Use max-width/max-height -->
+    <!-- Using CSS media queries -->
+    <!-- Using rem/vw/vh units over pixels  -->
+    <div class="container">
+        <h1 id="first">This is the first heading</h1>
+        <h1 id="sec">This is the second heading </h1>
+        <h1 id="third">This is the third heading </h1>
+    
+    </div>
+
+</body>
+</html>

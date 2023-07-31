@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline external and internal css</title>
+    <!-- now here i will use the internal css  -->
+    <style>
+        p{
+            color: silver !important;
+            background: rebeccapurple !important;
+        }
+    </style>
+    <!-- now i will add an external css file  -->
+    <link rel="stylesheet" href="haroon.css">
+    <!-- now here we can see the precedence level .the things written later will take the presedence oover the the earlier -->
+    <!-- but if we want a thing takes precedence even if its written earlier we will simply write important in that tag  -->
+</head>
+<body>
+    <h3>This is CSS tutorial</h3>
+    <!-- <p style="color:red ;">this is a paragraph on which i will implement my CSS(inline,internal and external) </p> -->
+    <!-- this was i all i done above using the inline css but now i will use the internal and external css in the heaad tag  -->
+    <p>this is a paragraph on which i will implement my CSS(inline,internal and external) </p>
+    
+</body>
+</html>

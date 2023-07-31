@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moreonselectors</title>
+    <style>
+        h1{
+            background-color: rgb(18, 95, 69);
+            text-align: center;
+            font-weight: bold;
+    
+        }
+        /* now here i will write the code to access to style the code within the li of the div */
+        div li p{
+            color: blue;
+            background-color: aqua;
+            text-align: center;
+        }
+        /* to style the thing ouside the div we can use that */
+        div+p{
+            color: brown;
+            background-color: aquamarine;
+        }
+                /* here the li will be the last element and after that if the p existed that p will get the styling */
+
+        div>p{
+            color: chartreuse;
+            background-color: darkblue;
+        }
+        body>h1{
+            background-color: antiquewhite;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>MORE ON SELECTORS</h1>
+    <div class="container">
+            <div class="row">
+                <li>
+                    <p>
+                        This is a paragraph in the li!
+                    </p>
+                    <p>This is another paragraph in the div but not in the li</p>
+                    <!-- now here you will clearly see that there is the css applying on all the p with
+                     in the div like if we write any of the paragrapgh inside that it will definately assing it to the paragrapgh -->
+
+                </li>
+                <p>here is the another paragrpjh in the div</p>
+                <!-- here it will not get any type of css as it is not inside the li of the div/  -->
+                <!-- to give this styling we will write code as || -->
+            </div>
+    </div>
+    <p>This is also a paragraph that is totally outside the div</p>
+
+
+</body>
+</html>

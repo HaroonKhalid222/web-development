@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Baloo Bhai','Mouse Memoirs', sans-serif;
+            margin: 0px;
+            padding: 0px;
+            background: url('imgs/main.jpg');
+            background-size: 1688px;
+            height: 1124px;
+            background-repeat: none !important;
+            color: rgb(50, 55, 55);
+            /* width: 100vw; */
+        
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 46px;
+
+
+        }
+        .left img{
+            width: 60px;
+        }
+        .left div{
+            text-align: center;
+        }
+        .center{
+            /* border: 2px solid yellow; */
+            display: block;
+            width: 39%;
+            margin:20px auto;
+            font-size: 16px;
+            
+        }
+        .right{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position:absolute;
+            right: 32px;
+            top: 20px;
+
+        }
+        .navbar li{
+            display: inline-block;
+            padding: 8px;
+            
+
+        }
+        .navbar li a{
+            padding: 34px 23px;
+            text-decoration: none;
+            color: black;
+            position: sticky;
+            top: 30px;
+        }
+        .navbar li a:hover{
+            text-decoration: underline;
+            color: rgb(57, 57, 59);
+        }
+        
+        .btn{
+            font-family:'Baloo Bhai', 'Mouse Memoirs', sans-serif;
+            margin: 8px 10px;
+            /* background-color: white; */
+            color: rgb(40, 38, 38);
+            border: 3px solid rgb(53, 51, 51);
+            padding: 5px 7px;
+            cursor: pointer;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+        .btn:hover{
+            background-color: rgb(198, 198, 192);
+
+        }
+        .container {
+        border: 2px solid rgb(48, 45, 45);
+        margin: auto;
+        padding: 75px;
+        width: 30%;
+        border-radius: 28px;
+        height: 40%;
+        position: sticky;
+        top: 30px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        /* border: 2px solid rgb(17, 16, 16); */
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+        background-color: rgb(238, 243, 243);
+        color: black;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 60%;
+        margin: 20px auto;
+    }
+    label{
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 3px 5px;
+        margin-right: 10px;
+        background-color: rgb(238, 243, 243);
+    }
+    input{
+        color: black;
+    }
+    /* img{
+        width: 100vw;
+    } */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left is for the logo  -->
+        <div class="left">
+            <img src="imgs/logo.png" alt="not found">
+            <div>BMW</div>
+        </div>
+        <!-- cnter is for the nevigation bar  -->
+     
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right is for the buttons or search menu  -->
+        <div class="right">
+
+        <button class="btn">
+            Book An Service
+        </button>
+        <button class="btn">
+            View Stock
+            
+        </button>        
+    </div>
+</header>
+<div class="container">
+            <h1>Order Your BMW Here</h1>
+            <form action="noaction.php">
+                <div class="form-group">
+                    
+                    <label for="car">Enter Name of Car </label>
+                    <select name="mycar" id="car">
+                        <!-- <input type="text" name="" placeholder="Enter your Name" id="car"> -->
+                    <!-- NOW THERE ARE OPTIONS USED IN THE SELECT000 -->
+                    <option value="civic">M5</option>
+                    <option value="sonata" selected>X5</option>
+                    <option value="x8">X8</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Model">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Exterior Color">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Interior Color">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter Rim size">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone Number">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+</body>
+</html>

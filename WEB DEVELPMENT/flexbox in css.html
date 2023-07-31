@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 100%;
+            height: 500px;
+           display: flex; /*  it will initialize the container as a flex box  */
+
+
+            /* properties for flex container  */
+             /* flex-direction: row;  */
+              /* it will not 
+             
+             cause any of the impacty on the contaier boxes  */
+             
+             /* flex-direction: column;  */
+             
+             /*it will show the boxes or item in the coloumn direction / */
+             
+             /* flex-direction: column-reverse;  */
+             /* it will aslo not cause any impact as the direction is  now coloumn */
+
+             /* flex-direction: row-reverse; */
+             /* i will reverse the boxes on the side  */
+
+             /* now if we want to make it responsive by wraping the item in the container we will use the flex direction to wrap  */
+             /* flex-wrap: wrap; */
+
+             /* now here if we want to wrap it reverrse  */
+             /* flex-wrap: wrap-reverse; */
+             /* so now it will wrap reversed  */
+
+             /* now here is another thing by which we can select both the direction an wrap */
+             /* flex-flow: row wrap; */
+
+
+             /* now here we will see another very impotant proper which is justify-content: ; */
+              /* justify-content: center; this center will move the boxes to the center  */
+              /* justify-content: space-around;  */
+              /* now space evenly means that each of the box from left and right side is spaced evenly according to the space available that is why the space between the boces is larger then the space available between the side  */
+              /* justify-content: space-between; */
+              /* in this condition the space between the content will come but not in between the sides of both ends close to the border of container  */
+              /* justify-content: space-evenly; */
+              /* in this case box will be saced evenly and will ave same space from every end as in between the border and the bpxes  */
+              
+              /* there is another property here to see for us which is align-items:  : ;
+              align-items:center ; 
+              /* now the work that the alling item center do is the most challanging or is challenging task to perfom that is to take the boces or the content to the center  */
+              /* align-items: flex-end;  */
+              /* this will take them to the end  */
+              /* align-items: flex-start;
+         */
+              /* this will move the content to the upper start postion  */
+              /* there is another property called as stretch 00 */
+              /* align-items: stretch;  */
+
+
+
+            }
+        .item{
+            width: 150px;
+            height:150px;
+            background-color: red;
+            border: 2px solid royalblue;
+            padding:3px;
+            margin: 10px 5px;
+        }
+        #Item-1{
+            /* higher the order later the visibility  */
+            order: 2;
+            /* there is another property called as the flex shrink  */
+            flex-shrink: 3;
+            /* it will shrink it's size when needed */
+            
+        }
+        
+        #Item-2{
+            /* if here i take the order more higher then it will be shown later  */
+            order: 10;
+            /* there is another property know as the flex grow in which the size of the box grows up  */
+            /* flex-grow: 1; */
+        }
+        
+        #Item-3{
+            flex-basis: 360px;
+            /* when the flex direction: will be set to the row then flex-basis: will control the width of the elementy ;; */
+            /* when the flex direction: will be set to the coloumn then flex-basis: will control the height of the elementy ;; */
+            align-self: flex-end;
+
+        }
+        #Item{
+            flex: 2 2 150px; 
+            /* grow shrink basis */
+        }
+
+    </style>
+</head>
+<body>
+     <!-- flexbox is used to design the layouts  -->
+     <h1>This is flexbox tut!!</h1>
+     <div class="container">
+        <div class="item" id="Item-1">First box</div>
+        <div class="item" id="Item-2">Second box</div>
+        <div class="item" id="Item-3">Third box</div>
+       <div class="item" id="Item-4">Fourth box</div>
+        <!--  <div class="item" id="Item-5">Fifth box</div>
+        <div class="item" id="Item-6">Sixth box</div>
+     </div> -->
+
+</body>
+</html>

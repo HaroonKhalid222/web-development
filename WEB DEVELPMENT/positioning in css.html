@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-color: white;
+            /* width: 1000px; */
+            height: 2500px;
+        }
+        body{
+            background-image: url(https://images.unsplash.com/photo-1491485066275-97da4e681cb8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+
+        }
+        h2{
+            background-color: rgb(117, 190, 222);
+            border:3px solid rgb(237, 238, 243);
+            border-radius: 8px;
+            width: 300px;
+            margin: auto;
+            height: 100px;
+            text-align: center;
+    }
+    h2:hover{
+        background-color: aquamarine;
+    }
+
+    .box{
+        border: 3px solid rebeccapurple;
+        background-color: grey;
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+        display: inline-block;
+    }
+    .box:hover{
+        background-color: azure;
+        border-radius: 7px;
+
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        color: rgb(15, 22, 225);
+
+    }
+    
+    /* now we will see about the position  */
+    #box1{
+        /* position: static,relative, absolute , fixed,  sticky;  */
+        /* These are the total position in the css  */
+        position: relative;
+        /* now we can set the positions as by writhing the pixels in the top bottom tgs etc  */
+        top: 34px;
+        /* when we want gap in the previous position we will use relative  and when we dont need any type of gap the we will use the absolute  */
+        /* relative :will leave a gap to its normal postion  */
+        right: 10px;
+
+    }
+    #box3{
+        /* here we will use the position as absolute realtive to the parent which is here container*/
+        /* absolute:realtive to its normal position  */
+        position: absolute;
+        right: 10 px;
+    }
+    /* if we want something to be fixed then we will use the postion fixed  */
+    #box4{
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+    #box2{
+        position: sticky;
+        top: 3px;   
+    
+    }
+    .container:hover{
+        background-color: black;
+    }
+    </style>
+</head>
+<body>
+    <h2>
+        POSITIONING IN CSS Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </h2>
+    <div class="container">
+
+        <div id="box1" class="box">1
+            <a href="HTMLentities.html">HTMLentities</a>
+        </div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">Contact with us</div>
+        
+    </div>
+</body>
+</html>

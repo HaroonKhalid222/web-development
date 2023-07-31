@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        /* now here we will see about the visibility */
+        #box1{
+            
+            background-color: aqua;
+        }
+        #box2{
+            /* now here i will show how the visibility works */
+            /* if i hide the visibilty then this happens */
+            /* visibility: hidden; */
+            background-color: aquamarine;
+            /* here in the box 2 i have changed the visibility from the default setting and have set it as hidden but it will take the space  */
+        }
+        #box3{
+            /* in this box 3 i will see how i can remove the empty space as well  */
+            /* here i will use display none */
+            /* display: none; */
+            background-color: blue;
+            position: relative;
+            top: 15px;
+            z-index: 45;
+            /* now the box and the empty space both will be removed  */
+        }
+        #box4{
+            position: relative;
+            top: 0px;
+            /* now here the purple box is overlapong but when i set the z index the game wil be totally chnaged and the depends upon the z index value  */
+            z-index: 40;
+            background-color: blueviolet;
+            
+        }
+        /* z index only  works for the positioned elements */
+        /* in the case of z index the box having a larger value of the z index will come over that having the less value of the z index */
+        /* you can see the examples in the box 3 and the box 4 */
+
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
